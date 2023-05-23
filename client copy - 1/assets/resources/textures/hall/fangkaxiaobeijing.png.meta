@@ -1,0 +1,74 @@
+{
+  "ver": "1.0.21",
+  "importer": "image",
+  "imported": true,
+  "uuid": "5eec799d-19eb-4553-9382-2ac0e65e63be",
+  "files": [
+    ".png",
+    ".json"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "5eec799d-19eb-4553-9382-2ac0e65e63be@6c48a",
+      "displayName": "fangkaxiaobeijing",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "wrapModeT": "clamp-to-edge",
+        "wrapModeS": "clamp-to-edge",
+        "mipfilter": "none",
+        "imageUuidOrDatabaseUri": "5eec799d-19eb-4553-9382-2ac0e65e63be",
+        "anisotropy": 0,
+        "isUuid": true
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "5eec799d-19eb-4553-9382-2ac0e65e63be@f9941",
+      "displayName": "fangkaxiaobeijing",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 0,
+        "trimY": 0,
+        "width": 255,
+        "height": 45,
+        "rawWidth": 255,
+        "rawHeight": 45,
+        "borderTop": 20,
+        "borderBottom": 20,
+        "borderLeft": 25,
+        "borderRight": 25,
+        "imageUuidOrDatabaseUri": "5eec799d-19eb-4553-9382-2ac0e65e63be@6c48a",
+        "packable": true,
+        "isUuid": true,
+        "atlasUuid": ""
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "hasAlpha": true,
+    "redirect": "5eec799d-19eb-4553-9382-2ac0e65e63be@f9941"
+  }
+}

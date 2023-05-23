@@ -1,0 +1,74 @@
+{
+  "ver": "1.0.21",
+  "importer": "image",
+  "imported": true,
+  "uuid": "7aaea111-105d-4f25-9a0a-7fdef510bf69",
+  "files": [
+    ".png",
+    ".json"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "7aaea111-105d-4f25-9a0a-7fdef510bf69@6c48a",
+      "displayName": "Z_money_frame",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "wrapModeT": "clamp-to-edge",
+        "wrapModeS": "clamp-to-edge",
+        "mipfilter": "none",
+        "imageUuidOrDatabaseUri": "7aaea111-105d-4f25-9a0a-7fdef510bf69",
+        "anisotropy": 0,
+        "isUuid": true
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "7aaea111-105d-4f25-9a0a-7fdef510bf69@f9941",
+      "displayName": "Z_money_frame",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 0,
+        "trimY": 0,
+        "width": 86,
+        "height": 27,
+        "rawWidth": 86,
+        "rawHeight": 27,
+        "borderTop": 13,
+        "borderBottom": 13,
+        "borderLeft": 20,
+        "borderRight": 20,
+        "imageUuidOrDatabaseUri": "7aaea111-105d-4f25-9a0a-7fdef510bf69@6c48a",
+        "packable": true,
+        "isUuid": true,
+        "atlasUuid": ""
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "hasAlpha": true,
+    "redirect": "7aaea111-105d-4f25-9a0a-7fdef510bf69@f9941"
+  }
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "shihua",
+    "_objFlags": 0,
+    "_native": "",
+    "sample": 12,
+    "speed": 1,
+    "wrapMode": 2,
+    "events": [],
+    "_duration": 0.5,
+    "_keys": [
+      [
+        0,
+        0.08333333333333333,
+        0.16666666666666666,
+        0.25,
+        0.3333333333333333,
+        0.4166666666666667
+      ]
+    ],
+    "_stepness": 0,
+    "_curves": [
+      {
+        "modifiers": [
+          {
+            "__id__": 1
+          },
+          "spriteFrame"
+        ],
+        "data": {
+          "keys": 0,
+          "values": [
+            {
+              "__uuid__": "c08937b5-d001-4d18-8270-cd3ec1f0d4c0@9e718"
+            },
+            {
+              "__uuid__": "c08937b5-d001-4d18-8270-cd3ec1f0d4c0@acf6d"
+            },
+            {
+              "__uuid__": "c08937b5-d001-4d18-8270-cd3ec1f0d4c0@2937c"
+            },
+            {
+              "__uuid__": "c08937b5-d001-4d18-8270-cd3ec1f0d4c0@4b89c"
+            },
+            {
+              "__uuid__": "c08937b5-d001-4d18-8270-cd3ec1f0d4c0@a9c9c"
+            },
+            {
+              "__uuid__": "c08937b5-d001-4d18-8270-cd3ec1f0d4c0@50174"
+            }
+          ],
+          "easingMethods": {}
+        }
+      }
+    ],
+    "_commonTargets": [],
+    "_hash": 0
+  },
+  {
+    "__type__": "cc.animation.ComponentPath",
+    "component": "cc.Sprite"
+  }
+]

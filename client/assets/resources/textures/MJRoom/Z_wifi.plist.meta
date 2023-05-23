@@ -1,0 +1,133 @@
+{
+  "ver": "1.0.6",
+  "importer": "sprite-atlas",
+  "imported": false,
+  "uuid": "d1ec606d-1a3a-4ebf-a9f1-5391b946cd31",
+  "files": [
+    ".plist"
+  ],
+  "subMetas": {
+    "cc94a": {
+      "uuid": "6545014e-31cc-4d52-a330-a8c5e1f0e3d3",
+      "imported": false,
+      "importer": "sprite-frame",
+      "files": [],
+      "subMetas": {},
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 2,
+        "trimY": 2,
+        "width": 48,
+        "height": 38,
+        "rawWidth": 48,
+        "rawHeight": 38,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0
+      },
+      "ver": "0.0.1",
+      "imageUuidOrDatabaseUri": "undefined@6c48a",
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "72c25": {
+      "uuid": "1a7de954-f6bb-4d3f-96a4-6944206807af",
+      "imported": false,
+      "importer": "sprite-frame",
+      "files": [],
+      "subMetas": {},
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -3,
+        "offsetY": -4,
+        "trimX": 2,
+        "trimY": 42,
+        "width": 42,
+        "height": 30,
+        "rawWidth": 48,
+        "rawHeight": 38,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0
+      },
+      "ver": "0.0.1",
+      "imageUuidOrDatabaseUri": "undefined@6c48a",
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "6d5d4": {
+      "uuid": "8f417674-a82c-4bda-be8a-4ef4c83a2779",
+      "imported": false,
+      "importer": "sprite-frame",
+      "files": [],
+      "subMetas": {},
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": true,
+        "offsetX": 0,
+        "offsetY": -8,
+        "trimX": 2,
+        "trimY": 74,
+        "width": 26,
+        "height": 22,
+        "rawWidth": 48,
+        "rawHeight": 38,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0
+      },
+      "ver": "0.0.1",
+      "imageUuidOrDatabaseUri": "undefined@6c48a",
+      "displayName": "",
+      "id": "",
+      "name": ""
+    },
+    "0ae23": {
+      "uuid": "13037d0c-c606-4568-bace-20d1918d0ca6",
+      "imported": false,
+      "importer": "sprite-frame",
+      "files": [],
+      "subMetas": {},
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": -12,
+        "trimX": 46,
+        "trimY": 42,
+        "width": 16,
+        "height": 14,
+        "rawWidth": 48,
+        "rawHeight": 38,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0
+      },
+      "ver": "0.0.1",
+      "imageUuidOrDatabaseUri": "undefined@6c48a",
+      "displayName": "",
+      "id": "",
+      "name": ""
+    }
+  },
+  "userData": {
+    "atlasTextureName": "Z_wifi.png",
+    "format": 2,
+    "textureUuid": "undefined@6c48a",
+    "uuid": "d1ec606d-1a3a-4ebf-a9f1-5391b946cd31"
+  }
+}

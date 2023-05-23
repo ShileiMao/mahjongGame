@@ -1,0 +1,74 @@
+{
+  "ver": "1.0.21",
+  "importer": "image",
+  "imported": true,
+  "uuid": "757141a1-2d34-4805-9151-2799f99b6ba8",
+  "files": [
+    ".png",
+    ".json"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "757141a1-2d34-4805-9151-2799f99b6ba8@6c48a",
+      "displayName": "chatbg_ld",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "wrapModeT": "clamp-to-edge",
+        "wrapModeS": "clamp-to-edge",
+        "mipfilter": "none",
+        "imageUuidOrDatabaseUri": "757141a1-2d34-4805-9151-2799f99b6ba8",
+        "anisotropy": 0,
+        "isUuid": true
+      },
+      "ver": "1.0.21",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "757141a1-2d34-4805-9151-2799f99b6ba8@f9941",
+      "displayName": "chatbg_ld",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 0,
+        "trimY": 0,
+        "width": 120,
+        "height": 66,
+        "rawWidth": 120,
+        "rawHeight": 66,
+        "borderTop": 15,
+        "borderBottom": 30,
+        "borderLeft": 45,
+        "borderRight": 15,
+        "imageUuidOrDatabaseUri": "757141a1-2d34-4805-9151-2799f99b6ba8@6c48a",
+        "packable": true,
+        "isUuid": true,
+        "atlasUuid": ""
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "hasAlpha": true,
+    "redirect": "757141a1-2d34-4805-9151-2799f99b6ba8@f9941"
+  }
+}

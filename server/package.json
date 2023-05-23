@@ -1,0 +1,30 @@
+{
+  "name": "majiang",
+  "version": "1.0.0",
+  "description": "",
+  "main": "configs.js",
+  "type": "commonjs",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "log4js": "6.9.1",
+    "mysql2": "^3.2.0",
+    "socket.io": "^4.6.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "express": "^4.15.4",
+    "log4js": "6.9.1",
+    "mysql2": "^3.2.0"
+  },
+  "scripts": {
+    "start-gameserver": "node ./game_server/app.js ../configs.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "stopry",
+  "license": "ISC"
+}

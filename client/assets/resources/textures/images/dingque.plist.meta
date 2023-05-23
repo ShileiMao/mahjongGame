@@ -1,0 +1,222 @@
+{
+  "ver": "1.0.6",
+  "importer": "sprite-atlas",
+  "imported": true,
+  "uuid": "8aa59a77-ca7f-41f2-8ff5-0978bd1fe4e8",
+  "files": [
+    ".plist",
+    ".json"
+  ],
+  "subMetas": {
+    "3f430": {
+      "importer": "sprite-frame",
+      "uuid": "8aa59a77-ca7f-41f2-8ff5-0978bd1fe4e8@3f430",
+      "displayName": "",
+      "id": "3f430",
+      "name": "dingtiao",
+      "userData": {
+        "atlasUuid": "8aa59a77-ca7f-41f2-8ff5-0978bd1fe4e8",
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 2,
+        "trimY": 2,
+        "width": 77,
+        "height": 79,
+        "rawWidth": 77,
+        "rawHeight": 79,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ef6e2": {
+      "importer": "sprite-frame",
+      "uuid": "8aa59a77-ca7f-41f2-8ff5-0978bd1fe4e8@ef6e2",
+      "displayName": "",
+      "id": "ef6e2",
+      "name": "dingtong",
+      "userData": {
+        "atlasUuid": "8aa59a77-ca7f-41f2-8ff5-0978bd1fe4e8",
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 81,
+        "trimY": 2,
+        "width": 75,
+        "height": 79,
+        "rawWidth": 77,
+        "rawHeight": 79,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6647b": {
+      "importer": "sprite-frame",
+      "uuid": "8aa59a77-ca7f-41f2-8ff5-0978bd1fe4e8@6647b",
+      "displayName": "",
+      "id": "6647b",
+      "name": "dingwan",
+      "userData": {
+        "atlasUuid": "8aa59a77-ca7f-41f2-8ff5-0978bd1fe4e8",
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": true,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 158,
+        "trimY": 2,
+        "width": 77,
+        "height": 75,
+        "rawWidth": 77,
+        "rawHeight": 79,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f6086": {
+      "importer": "sprite-frame",
+      "uuid": "8aa59a77-ca7f-41f2-8ff5-0978bd1fe4e8@f6086",
+      "displayName": "",
+      "id": "f6086",
+      "name": "tiaojiaobiao",
+      "userData": {
+        "atlasUuid": "8aa59a77-ca7f-41f2-8ff5-0978bd1fe4e8",
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 82,
+        "trimY": 83,
+        "width": 38,
+        "height": 38,
+        "rawWidth": 38,
+        "rawHeight": 38,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6b892": {
+      "importer": "sprite-frame",
+      "uuid": "8aa59a77-ca7f-41f2-8ff5-0978bd1fe4e8@6b892",
+      "displayName": "",
+      "id": "6b892",
+      "name": "tongjiaobiao",
+      "userData": {
+        "atlasUuid": "8aa59a77-ca7f-41f2-8ff5-0978bd1fe4e8",
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 42,
+        "trimY": 83,
+        "width": 38,
+        "height": 38,
+        "rawWidth": 38,
+        "rawHeight": 38,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2ae89": {
+      "importer": "sprite-frame",
+      "uuid": "8aa59a77-ca7f-41f2-8ff5-0978bd1fe4e8@2ae89",
+      "displayName": "",
+      "id": "2ae89",
+      "name": "wanjiaobiao",
+      "userData": {
+        "atlasUuid": "8aa59a77-ca7f-41f2-8ff5-0978bd1fe4e8",
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 2,
+        "trimY": 83,
+        "width": 38,
+        "height": 38,
+        "rawWidth": 38,
+        "rawHeight": 38,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a"
+      },
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "atlasTextureName": "dingque.png",
+    "format": 2,
+    "textureUuid": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a",
+    "uuid": "8aa59a77-ca7f-41f2-8ff5-0978bd1fe4e8"
+  }
+}

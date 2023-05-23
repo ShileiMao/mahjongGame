@@ -1,0 +1,40 @@
+{
+  "ver": "1.0.21",
+  "importer": "image",
+  "imported": true,
+  "uuid": "2b6ea8a8-0ec2-4eb9-8013-1badbd3fbed2",
+  "files": [
+    ".png",
+    ".json"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "2b6ea8a8-0ec2-4eb9-8013-1badbd3fbed2@6c48a",
+      "displayName": "emoji_action_texture",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "wrapModeT": "clamp-to-edge",
+        "wrapModeS": "clamp-to-edge",
+        "mipfilter": "none",
+        "imageUuidOrDatabaseUri": "2b6ea8a8-0ec2-4eb9-8013-1badbd3fbed2",
+        "anisotropy": 0,
+        "isUuid": true,
+        "visible": true
+      },
+      "ver": "1.0.22",
+      "imported": false,
+      "files": [],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "texture",
+    "hasAlpha": true,
+    "redirect": "2b6ea8a8-0ec2-4eb9-8013-1badbd3fbed2@6c48a",
+    "fixAlphaTransparencyArtifacts": false
+  }
+}
