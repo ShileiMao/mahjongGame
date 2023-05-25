@@ -51,10 +51,10 @@ export class Folds extends Component {
            self.initAllFolds();
         });
         this.node.on('game_chupai_notify',function(data){
-           self.initFolds(data.detail);
+           self.initFolds(data);
         });
         this.node.on('guo_notify',function(data){
-           self.initFolds(data.detail);
+           self.initFolds(data);
         });
     }
 

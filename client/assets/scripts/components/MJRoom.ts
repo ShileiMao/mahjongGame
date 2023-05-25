@@ -94,7 +94,7 @@ export class MJRoom extends Component {
            }
         });
         this.node.on('huanpai_notify',function(data){
-           var idx = data.detail.seatindex;
+           var idx = data.seatindex;
            var localIdx = AppGlobal.vv().gameNetMgr.getLocalIndex(idx);
            self._seats2[localIdx].refreshXuanPaiState();
         });
@@ -104,19 +104,16 @@ export class MJRoom extends Component {
            }
         });
         this.node.on('voice_msg',function(data){
-           var data = data.detail;
            self._voiceMsgQueue.push(data);
            self.playVoice();
         });
         this.node.on('chat_push',function(data){
-           var data = data.detail;
            var idx = AppGlobal.vv().gameNetMgr.getSeatIndexByID(data.sender);
            var localIdx = AppGlobal.vv().gameNetMgr.getLocalIndex(idx);
            self._seats[localIdx].chat(data.content);
            self._seats2[localIdx].chat(data.content);
         });
         this.node.on('quick_chat_push',function(data){
-           var data = data.detail;
            var idx = AppGlobal.vv().gameNetMgr.getSeatIndexByID(data.sender);
            var localIdx = AppGlobal.vv().gameNetMgr.getLocalIndex(idx);
            var index = data.content;
@@ -126,7 +123,6 @@ export class MJRoom extends Component {
            AppGlobal.vv().audioMgr.playSFX(info.sound);
         });
         this.node.on('emoji_push',function(data){
-           var data = data.detail;
            var idx = AppGlobal.vv().gameNetMgr.getSeatIndexByID(data.sender);
            var localIdx = AppGlobal.vv().gameNetMgr.getLocalIndex(idx);
            console.log(data);

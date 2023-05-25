@@ -20,11 +20,9 @@ export class PengGangs extends Component {
         pengangroot.setScale(new Vec3(curScale.x * scale, curScale.y * scale, curScale.z))
         var self = this;
         this.node.on('peng_notify',function(data){
-           var data = data.detail;
            self.onPengGangChanged(data);
         });
         this.node.on('gang_notify',function(data){
-           var data = data.detail;
            self.onPengGangChanged(data.seatData);
         });
         this.node.on('game_begin',function(data){

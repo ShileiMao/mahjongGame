@@ -6,7 +6,7 @@ const { ccclass, property } = _decorator;
 // 本脚本挂在在 UI -> Canvas底下, 对应UI位于 Canvas -> game -> dingque
 @ccclass('DingQue')
 export class DingQue extends Component {
-    @property
+    @property(Node)
     public queYiMen: Node = null;
     @property
     public tips = [];

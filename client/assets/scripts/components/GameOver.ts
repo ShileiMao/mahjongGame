@@ -53,7 +53,7 @@ export class GameOver extends Component {
            this._seats.push(viewdata);
         }
         var self = this;
-        this.node.on('game_over',function(data){self.onGameOver(data.detail);});
+        this.node.on('game_over',function(data){self.onGameOver(data);});
         this.node.on('game_end',function(data){self._isGameEnd = true;});
     }
 

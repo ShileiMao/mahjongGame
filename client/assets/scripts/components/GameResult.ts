@@ -25,7 +25,7 @@ export class GameResult extends Component {
             AppGlobal.vv().utils.addClickEvent(btnShare,this.node,"GameResult","onBtnShareClicked");
         }
         var self = this;
-        this.node.on('game_end',function(data){self.onGameEnd(data.detail);});
+        this.node.on('game_end',function(data){self.onGameEnd(data);});
     }
 
     showResult (seat: any, info: any, isZuiJiaPaoShou: any) {

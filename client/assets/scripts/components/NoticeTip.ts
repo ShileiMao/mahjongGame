@@ -13,7 +13,7 @@ export class NoticeTip extends Component {
         this._info = utils.find("tip_notice/info", this.node).getComponent(Label);
         var self = this;
         this.node.on('push_notice',function(data){
-           var data = data.detail;
+           var data = data;
            self._guohu.active = true;
            self._guohuTime = data.time;
            self._info.string = data.info;

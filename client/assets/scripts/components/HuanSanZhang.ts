@@ -27,7 +27,7 @@ export class HuanSanZhang extends Component {
           self.showHuanpai(true);
         });
         this.node.on('huanpai_notify',function(data){
-           if(data.detail.seatindex == AppGlobal.vv().gameNetMgr.seatIndex){
+           if(data.seatindex == AppGlobal.vv().gameNetMgr.seatIndex){
                self.initHuaipaiInfo();   
            }
         });
@@ -48,7 +48,7 @@ export class HuanSanZhang extends Component {
            self._huanpaiArr = [];
         });
         this.node.on('mj_clicked',function(data){
-           var target = data.detail;
+           var target = data;
            var idx = self._huanpaiArr.indexOf(target); 
            if(idx != -1){
                target.y = 0;
