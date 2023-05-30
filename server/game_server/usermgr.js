@@ -58,7 +58,7 @@ exports.kickAllInRoom = function(roomId){
             var socket = userList[rs.userId];
             if(socket != null){
                 exports.del(rs.userId);
-                socket.disconnect();
+                socket.socket.close();
             }
         }
     }

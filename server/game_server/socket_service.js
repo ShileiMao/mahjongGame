@@ -37,7 +37,7 @@ class WebSocketWrapper {
         }
       }
     } catch(error) {
-      console.error(`failed to parse raw message, this is an unkown event! \nerror: ${error}\nraw message: ${rawMessage}"`);
+      console.error(`failed to parse raw message, this is an unkown event! \nerror: ${error}\nraw message: ${rawMessage}\n${error.stack}`);
     }
   }
 

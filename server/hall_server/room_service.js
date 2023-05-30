@@ -25,7 +25,7 @@ app.all('*', function(req, res, next) {
 app.get('/register_gs',function(req,res){
 	// console.log("register game server, query params: "  + JSON.stringify(req.query) + "\nrequestIp: " + req.ip);
 	// var ip = req.ip
-	const ip = req.query.clientip;
+	const ip = req.query.callbackip;
 	var clientip = req.query.clientip;
 	var clientport = req.query.clientport;
 	var httpPort = req.query.httpPort;
@@ -244,6 +244,6 @@ exports.isServerOnline = function(ip,port,callback){
 
 exports.start = function($config){
 	config = $config;
-	app.listen(config.ROOM_PORT,config.FOR_ROOM_IP);
+	app.listen(config.ROOM_PORT, config.FOR_ROOM_IP);
 	console.log("room service is listening on " + config.FOR_ROOM_IP + ":" + config.ROOM_PORT);
 };

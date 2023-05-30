@@ -94,8 +94,11 @@ CREATE TABLE `t_message` (
 -- ----------------------------
 -- Records of t_message
 -- ----------------------------
-INSERT INTO `t_message` VALUES ('notice', '幼麟游戏，卓越品质，值得信赖', '20161128');
-INSERT INTO `t_message` VALUES ('fkgm', '幼麟游戏，卓越品质，值得信赖', '20161128');
+-- INSERT INTO `t_message` VALUES ('notice', '幼麟游戏，卓越品质，值得信赖', '20161128');
+-- INSERT INTO `t_message` VALUES ('fkgm', '幼麟游戏，卓越品质，值得信赖', '20161128');
+
+INSERT INTO `t_message` VALUES ('notice', '欢迎试玩，注意保护您的信息安全', '20161128');
+INSERT INTO `t_message` VALUES ('fkgm', '欢迎试玩，注意保护您的信息安全', '20161128');
 
 -- ----------------------------
 -- Table structure for `t_rooms`
@@ -159,7 +162,7 @@ CREATE TABLE `t_users` (
 -- ----------------------------
 -- Records of t_users
 -- ----------------------------
-INSERT INTO `t_users` VALUES ('9', 'guest_123456', '5aSP5L6v6LWM5L6g', '0', null, '1', '0', '1000', '21', '526035', '');
-INSERT INTO `t_users` VALUES ('10', 'guest_asdf1', '55qH55Sr56iz6LWi', '0', null, '1', '0', '1000', '21', '526035', '');
-INSERT INTO `t_users` VALUES ('11', 'guest_asdf2', '5Lic5pa56ZuA5Zyj', '0', null, '1', '0', '1000', '21', '526035', '');
-INSERT INTO `t_users` VALUES ('12', 'guest_asdf3', '5qyn6Ziz6Ieq5pG4', '0', null, '1', '0', '1000', '21', '526035', '');
+-- INSERT INTO `t_users` VALUES ('9', 'guest_123456', '5aSP5L6v6LWM5L6g', '0', null, '1', '0', '1000', '21', '526035', '');
+-- INSERT INTO `t_users` VALUES ('10', 'guest_asdf1', '55qH55Sr56iz6LWi', '0', null, '1', '0', '1000', '21', '526035', '');
+-- INSERT INTO `t_users` VALUES ('11', 'guest_asdf2', '5Lic5pa56ZuA5Zyj', '0', null, '1', '0', '1000', '21', '526035', '');
+-- INSERT INTO `t_users` VALUES ('12', 'guest_asdf3', '5qyn6Ziz6Ieq5pG4', '0', null, '1', '0', '1000', '21', '526035', '');

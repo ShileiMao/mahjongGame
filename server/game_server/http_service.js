@@ -199,6 +199,7 @@ exports.start = function ($config) {
 		clientip: config.CLIENT_IP, //"127.0.0.1"
 		clientport: config.CLIENT_PORT, //10000
 		httpPort: config.HTTP_PORT, // 9003
+		callbackip: config.FOR_HALL_IP, // 用于给room server 回调
 		load: roomMgr.getTotalRooms(),
 	};
 
