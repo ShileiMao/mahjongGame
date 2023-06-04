@@ -1,10 +1,9 @@
 {
-  "ver": "1.0.6",
+  "ver": "1.0.8",
   "importer": "sprite-atlas",
   "imported": true,
   "uuid": "cdbf24b6-487a-47c4-89c8-a26c904af2d4",
   "files": [
-    ".plist",
     ".json"
   ],
   "subMetas": {
@@ -33,9 +32,21 @@
         "borderRight": 0,
         "packable": true,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "2c9b7b23-1d41-4a46-bb3d-59f276d1d239@6c48a"
+        "imageUuidOrDatabaseUri": "2c9b7b23-1d41-4a46-bb3d-59f276d1d239@6c48a",
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [],
+          "indexes": [],
+          "uv": [],
+          "nuv": [],
+          "minPos": [],
+          "maxPos": []
+        }
       },
-      "ver": "1.0.9",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -67,9 +78,21 @@
         "borderRight": 0,
         "packable": true,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "2c9b7b23-1d41-4a46-bb3d-59f276d1d239@6c48a"
+        "imageUuidOrDatabaseUri": "2c9b7b23-1d41-4a46-bb3d-59f276d1d239@6c48a",
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [],
+          "indexes": [],
+          "uv": [],
+          "nuv": [],
+          "minPos": [],
+          "maxPos": []
+        }
       },
-      "ver": "1.0.9",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -101,9 +124,21 @@
         "borderRight": 0,
         "packable": true,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "2c9b7b23-1d41-4a46-bb3d-59f276d1d239@6c48a"
+        "imageUuidOrDatabaseUri": "2c9b7b23-1d41-4a46-bb3d-59f276d1d239@6c48a",
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [],
+          "indexes": [],
+          "uv": [],
+          "nuv": [],
+          "minPos": [],
+          "maxPos": []
+        }
       },
-      "ver": "1.0.9",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"

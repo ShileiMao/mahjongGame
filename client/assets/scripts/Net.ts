@@ -1,12 +1,14 @@
-import { _decorator, Component, sys, SystemEvent, utils, game, Game} from 'cc';
+import { _decorator, Component, sys, utils, game, Game} from 'cc';
 import { WebSocketWrapper } from './SocketWrapper';
 import { StringUtils } from './utils/StringUtils';
+import { AppGlobal } from './components/AppGlobal';
 const { ccclass } = _decorator;
 
 @ccclass('Net')
 export class Net extends Component {
     public ip: string = '';
     public  sio: WebSocket | null = null;
+    public testSocket: WebSocket
     public isPinging = false;
     public fnDisconnect: Function | null = null;
     public handlers = new Map<string, (data: any) => void>();
@@ -150,31 +152,44 @@ export class Net extends Component {
         }
     }    
     test(fnResult: Function){
-        // var xhr = null;
-        // var fn = function(ret){
-        //     fnResult(ret.isonline);
-        //     xhr = null;
-        // }
-        // var arr = this.ip.split(':');
-        // var data = {
-        //     account: AppGlobal.vv.userMgr.account,
-        //     sign: AppGlobal.vv.userMgr.sign,
-        //     ip:arr[0],
-        //     port:arr[1],
-        // }
-        // xhr = AppGlobal.vv.http.sendRequest("/is_server_online",data,fn);
-        // setTimeout(function(){
-        //     if(xhr){
-        //         xhr.abort();
-        //         fnResult(false);                    
-        //     }
-        // },1500);
-        // var opts = {
-        //     'reconnection':false,
-        //     'force new connection': true,
-        //     'transports':['websocket', 'polling']
-        // }
-        // var self = this;
+        var xhr = null;
+        var fn = function(ret){
+            fnResult(ret.isonline);
+            xhr = null;
+        }
+        var arr = this.ip.split(':');
+        var data = {
+            account: AppGlobal.vv().userMgr.account,
+            sign: AppGlobal.vv().userMgr.sign,
+            ip:arr[0],
+            port:arr[1],
+        }
+        xhr = AppGlobal.vv().http.sendRequest("/is_server_online",data,fn);
+        setTimeout(function(){
+            if(xhr){
+                xhr.abort();
+                fnResult(false);                    
+            }
+        },1500);
+        var opts = {
+            'reconnection':false,
+            'force new connection': true,
+            'transports':['websocket', 'polling']
+        }
+        var self = this;
+        this.testSocket = new WebSocket(this.ip)
+        this.testSocket.onopen =  ((event) => {
+            console.log('connect');
+            this.testSocket.close()
+            this.testSocket = null;
+            fnResult(true)
+        })
+
+        this.testSocket.onerror = (event) => {
+            console.log("connect_failed")
+            this.testSocket = null;
+            fnResult(false);
+        }
         // this.testsio = window.io.connect(this.ip,opts);
         // this.testsio.on('connect',function(){
         //     console.log('connect');

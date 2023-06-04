@@ -1,11 +1,11 @@
 {
-  "ver": "1.0.21",
+  "ver": "1.0.25",
   "importer": "image",
   "imported": true,
   "uuid": "227ac05d-89d6-4939-bf0b-b7c1e48bc56d",
   "files": [
-    ".png",
-    ".json"
+    ".json",
+    ".png"
   ],
   "subMetas": {
     "6c48a": {
@@ -22,9 +22,10 @@
         "mipfilter": "none",
         "imageUuidOrDatabaseUri": "227ac05d-89d6-4939-bf0b-b7c1e48bc56d",
         "anisotropy": 0,
-        "isUuid": true
+        "isUuid": true,
+        "visible": false
       },
-      "ver": "1.0.21",
+      "ver": "1.0.22",
       "imported": true,
       "files": [
         ".json"
@@ -56,9 +57,67 @@
         "imageUuidOrDatabaseUri": "227ac05d-89d6-4939-bf0b-b7c1e48bc56d@6c48a",
         "packable": true,
         "isUuid": true,
-        "atlasUuid": ""
+        "atlasUuid": "",
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -49,
+            -9,
+            0,
+            49,
+            -9,
+            0,
+            -49,
+            9,
+            0,
+            49,
+            9,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            0,
+            18,
+            98,
+            18,
+            0,
+            0,
+            98,
+            0
+          ],
+          "nuv": [
+            0,
+            0,
+            0.8376068376068376,
+            0,
+            0,
+            1,
+            0.8376068376068376,
+            1
+          ],
+          "minPos": [
+            -49,
+            -9,
+            0
+          ],
+          "maxPos": [
+            49,
+            9,
+            0
+          ]
+        }
       },
-      "ver": "1.0.9",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -69,6 +128,7 @@
   "userData": {
     "type": "sprite-frame",
     "hasAlpha": true,
-    "redirect": "227ac05d-89d6-4939-bf0b-b7c1e48bc56d@f9941"
+    "redirect": "227ac05d-89d6-4939-bf0b-b7c1e48bc56d@f9941",
+    "fixAlphaTransparencyArtifacts": false
   }
 }

@@ -1,18 +1,17 @@
-import { _decorator, Button, Component, EventHandler, Node, game, macro, math, Slider, SystemEvent, systemEvent, utils, Vec3, UITransform } from 'cc';
+import { _decorator, Button, Component, EventHandler, Node, game, macro, math, Slider, utils, Vec3, UITransform, Input, input } from 'cc';
 import { AppGlobal } from './components/AppGlobal';
 const { ccclass } = _decorator;
 
 @ccclass('Utils')
 export class Utils extends Component {
 
-    addClickEvent (node: any, target: any, component: any, handler: any) {
+    addClickEvent (node: Node, target: Node, component: string, handler: string) {
         console.log(component + ":" + handler);
         var eventHandler = new EventHandler();
         eventHandler.target = target;
         eventHandler.component = component;
         eventHandler.handler = handler;
-        var clickEvents = node.getComponent(Button).clickEvents;
-        clickEvents.push(eventHandler);
+        node.getComponent(Button).clickEvents.push(eventHandler);
     }
 
     addSlideEvent (node: any, target: any, component: any, handler: any) {
@@ -25,13 +24,21 @@ export class Utils extends Component {
     }
 
     addEscEvent (node: any) {
-        systemEvent.on(SystemEvent.EventType.KEY_UP, (event) => {
+        input.on(Input.EventType.KEY_UP, (event) => {
             if(event.keyCode == macro.KEY.back){
                 AppGlobal.vv().alert.show('提示','确定要退出游戏吗？',function(){
                     game.end();
                 }, true);
             }
-        }, node);
+        }, node)
+
+        // systemEvent.on(SystemEvent.EventType.KEY_UP, (event) => {
+        //     if(event.keyCode == macro.KEY.back){
+        //         AppGlobal.vv().alert.show('提示','确定要退出游戏吗？',function(){
+        //             game.end();
+        //         }, true);
+        //     }
+        // }, node);
     }
 
     setRotation(node: Node, rotation: {x?: number, y?: number, z?: number}) {

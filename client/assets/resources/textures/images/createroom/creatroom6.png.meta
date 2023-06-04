@@ -1,11 +1,11 @@
 {
-  "ver": "1.0.21",
+  "ver": "1.0.25",
   "importer": "image",
   "imported": true,
   "uuid": "a1b6f0f2-5105-4910-adac-905068590909",
   "files": [
-    ".png",
-    ".json"
+    ".json",
+    ".png"
   ],
   "subMetas": {
     "6c48a": {
@@ -22,9 +22,10 @@
         "mipfilter": "none",
         "imageUuidOrDatabaseUri": "a1b6f0f2-5105-4910-adac-905068590909",
         "anisotropy": 0,
-        "isUuid": true
+        "isUuid": true,
+        "visible": false
       },
-      "ver": "1.0.21",
+      "ver": "1.0.22",
       "imported": true,
       "files": [
         ".json"
@@ -56,9 +57,67 @@
         "imageUuidOrDatabaseUri": "a1b6f0f2-5105-4910-adac-905068590909@6c48a",
         "packable": true,
         "isUuid": true,
-        "atlasUuid": ""
+        "atlasUuid": "",
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -18.5,
+            -15,
+            0,
+            18.5,
+            -15,
+            0,
+            -18.5,
+            15,
+            0,
+            18.5,
+            15,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            0,
+            30,
+            37,
+            30,
+            0,
+            0,
+            37,
+            0
+          ],
+          "nuv": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "minPos": [
+            -18.5,
+            -15,
+            0
+          ],
+          "maxPos": [
+            18.5,
+            15,
+            0
+          ]
+        }
       },
-      "ver": "1.0.9",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -69,6 +128,7 @@
   "userData": {
     "type": "sprite-frame",
     "hasAlpha": true,
-    "redirect": "a1b6f0f2-5105-4910-adac-905068590909@f9941"
+    "redirect": "a1b6f0f2-5105-4910-adac-905068590909@f9941",
+    "fixAlphaTransparencyArtifacts": false
   }
 }

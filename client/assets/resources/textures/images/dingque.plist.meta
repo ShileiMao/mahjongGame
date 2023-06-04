@@ -1,10 +1,9 @@
 {
-  "ver": "1.0.6",
+  "ver": "1.0.8",
   "importer": "sprite-atlas",
   "imported": true,
   "uuid": "8aa59a77-ca7f-41f2-8ff5-0978bd1fe4e8",
   "files": [
-    ".plist",
     ".json"
   ],
   "subMetas": {
@@ -33,9 +32,21 @@
         "borderRight": 0,
         "packable": true,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a"
+        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a",
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [],
+          "indexes": [],
+          "uv": [],
+          "nuv": [],
+          "minPos": [],
+          "maxPos": []
+        }
       },
-      "ver": "1.0.9",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -67,9 +78,21 @@
         "borderRight": 0,
         "packable": true,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a"
+        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a",
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [],
+          "indexes": [],
+          "uv": [],
+          "nuv": [],
+          "minPos": [],
+          "maxPos": []
+        }
       },
-      "ver": "1.0.9",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -101,9 +124,21 @@
         "borderRight": 0,
         "packable": true,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a"
+        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a",
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [],
+          "indexes": [],
+          "uv": [],
+          "nuv": [],
+          "minPos": [],
+          "maxPos": []
+        }
       },
-      "ver": "1.0.9",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -135,9 +170,21 @@
         "borderRight": 0,
         "packable": true,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a"
+        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a",
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [],
+          "indexes": [],
+          "uv": [],
+          "nuv": [],
+          "minPos": [],
+          "maxPos": []
+        }
       },
-      "ver": "1.0.9",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -169,9 +216,21 @@
         "borderRight": 0,
         "packable": true,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a"
+        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a",
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [],
+          "indexes": [],
+          "uv": [],
+          "nuv": [],
+          "minPos": [],
+          "maxPos": []
+        }
       },
-      "ver": "1.0.9",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -203,9 +262,21 @@
         "borderRight": 0,
         "packable": true,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a"
+        "imageUuidOrDatabaseUri": "453df665-6bdf-4990-a57e-4dd754766c93@6c48a",
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [],
+          "indexes": [],
+          "uv": [],
+          "nuv": [],
+          "minPos": [],
+          "maxPos": []
+        }
       },
-      "ver": "1.0.9",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"

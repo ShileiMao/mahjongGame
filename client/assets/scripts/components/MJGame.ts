@@ -9,10 +9,11 @@ import {
   Sprite,
   sys,
   Event,
-  SystemEvent,
   utils,
   view,
   UIOpacity,
+  input,
+  Input,
 } from "cc";
 import { AppGlobal } from "./AppGlobal";
 import { NoticeTip } from "./NoticeTip";
@@ -184,7 +185,7 @@ export class MJGame extends Component {
 
   initDragStuffs(node: Node) {
     node.on(
-      SystemEvent.EventType.TOUCH_START,
+      Input.EventType.TOUCH_START,
       function (event) {
         console.log("cc.Node.EventType.TOUCH_START");
         if (
@@ -207,7 +208,7 @@ export class MJGame extends Component {
       }.bind(this)
     );
     node.on(
-      SystemEvent.EventType.TOUCH_MOVE,
+      Input.EventType.TOUCH_MOVE,
       function (event) {
         console.log("cc.Node.EventType.TOUCH_MOVE");
         if (
@@ -230,11 +231,11 @@ export class MJGame extends Component {
           event.getLocationX() - view.getVisibleSize().width / 2;
         this._chupaidrag.y =
           event.getLocationY() - view.getVisibleSize().height / 2;
-        node.y = 0;
+          AppGlobal.vv().utils.setLocation(node, {y: 0})
       }.bind(this)
     );
     node.on(
-      SystemEvent.EventType.TOUCH_END,
+      Input.EventType.TOUCH_END,
       function (event) {
         if (
           AppGlobal.vv().gameNetMgr.turn != AppGlobal.vv().gameNetMgr.seatIndex
@@ -253,21 +254,21 @@ export class MJGame extends Component {
       }.bind(this)
     );
     node.on(
-      SystemEvent.EventType.TOUCH_CANCEL,
+      Input.EventType.TOUCH_CANCEL,
       function (event) {
         if (
           AppGlobal.vv().gameNetMgr.turn != AppGlobal.vv().gameNetMgr.seatIndex
         ) {
           return;
         }
-        if (!node.interactable) {
+        if (!node.getComponent(Button)?.interactable) {
           return;
         }
         console.log("cc.Node.EventType.TOUCH_CANCEL");
         this._chupaidrag.active = false;
-        node.opacity = 255;
+        node.getComponent(UIOpacity).opacity = 255;
         if (event.getLocationY() >= 200) {
-          this.shoot(node.mjId);
+          this.shoot((node as any).mjId);
         } else if (event.getLocationY() >= 150) {
         }
       }.bind(this)

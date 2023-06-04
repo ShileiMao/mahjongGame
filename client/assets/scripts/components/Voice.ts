@@ -1,4 +1,4 @@
-import { _decorator, Component, utils, Node, System, SystemEvent } from 'cc';
+import { _decorator, Component, utils, Node, System, Input } from 'cc';
 import { AppGlobal } from './AppGlobal';
 const { ccclass, property } = _decorator;
 
@@ -31,17 +31,17 @@ export class Voice extends Component {
         var self = this;
         var btnVoice = utils.find("btn_voice", this.node);
         if(btnVoice){
-           btnVoice.on(SystemEvent.EventType.TOUCH_START,function(){
+           btnVoice.on(Input.EventType.TOUCH_START,function(){
                console.log("cc.Node.EventType.TOUCH_START");
                AppGlobal.vv().voiceMgr.prepare("record.amr");
                self._lastTouchTime = Date.now();
                self._voice.active = true;
                self._voice_failed.active = false;
            });
-           btnVoice.on(SystemEvent.EventType.TOUCH_MOVE,function(){
+           btnVoice.on(Input.EventType.TOUCH_MOVE,function(){
                console.log("cc.Node.EventType.TOUCH_MOVE");
            });
-           btnVoice.on(SystemEvent.EventType.TOUCH_END,function(){
+           btnVoice.on(Input.EventType.TOUCH_END,function(){
                console.log("cc.Node.EventType.TOUCH_END");
                if(Date.now() - self._lastTouchTime < 1000){
                    self._voice_failed.active = true;
@@ -52,7 +52,7 @@ export class Voice extends Component {
                }
                self._lastTouchTime = null;
            });
-           btnVoice.on(SystemEvent.EventType.TOUCH_CANCEL,function(){
+           btnVoice.on(Input.EventType.TOUCH_CANCEL,function(){
                console.log("cc.Node.EventType.TOUCH_CANCEL");
                AppGlobal.vv().voiceMgr.cancel();
                self._lastTouchTime = null;

@@ -67,7 +67,7 @@ export class AudioMgr extends Component {
         if(this.bgmAudioID >= 0){
         //    audioEngine.stop(this.bgmAudioID);
         }
-        this.play(audioUrl)
+        // this.play(audioUrl)
         // this.bgmAudioID = cc.audioEngine.play(audioUrl,true,this.bgmVolume);
     }
 

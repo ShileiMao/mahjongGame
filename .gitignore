@@ -134,3 +134,5 @@ dist
 # build temp 
 server_build/
 server_build.tar.gz
+artifacts/
+artifacts.tar

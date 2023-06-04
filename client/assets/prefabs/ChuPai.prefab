@@ -1,13 +1,14 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "",
+    "_name": "ChuPai",
     "_objFlags": 0,
     "_native": "",
     "data": {
       "__id__": 1
     },
-    "asyncLoadAssets": false
+    "asyncLoadAssets": false,
+    "persistent": false
   },
   {
     "__type__": "cc.Node",
@@ -22,14 +23,14 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 6
+        "__id__": 10
       },
       {
-        "__id__": 7
+        "__id__": 12
       }
     ],
     "_prefab": {
-      "__id__": 5
+      "__id__": 14
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -90,14 +91,14 @@
         "__id__": 3
       },
       {
-        "__id__": 8
+        "__id__": 5
       },
       {
-        "__id__": 9
+        "__id__": 7
       }
     ],
     "_prefab": {
-      "__id__": 4
+      "__id__": 9
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -153,7 +154,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 10
+      "__id__": 4
     },
     "_customMaterial": null,
     "_visFlags": 0,
@@ -184,60 +185,8 @@
     "_atlas": null
   },
   {
-    "__type__": "cc.PrefabInfo",
-    "root": {
-      "__id__": 1
-    },
-    "asset": {
-      "__id__": 0
-    },
-    "fileId": "44f6fbrW4tN+KfvWX2OEkjj"
-  },
-  {
-    "__type__": "cc.PrefabInfo",
-    "root": {
-      "__id__": 1
-    },
-    "asset": {
-      "__id__": 0
-    },
-    "fileId": "b5891hnB3xPsZ8btypA8brR"
-  },
-  {
-    "__type__": "cc.UIOpacity",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "__prefab": {
-      "__id__": 11
-    },
-    "_opacity": 255
-  },
-  {
-    "__type__": "cc.UITransform",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "__prefab": {
-      "__id__": 12
-    },
-    "_priority": 0,
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    }
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "82/PgWGrNGv52t827sDCh2"
   },
   {
     "__type__": "cc.UIOpacity",
@@ -248,9 +197,13 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 13
+      "__id__": 6
     },
     "_opacity": 255
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "54eGj9L/pKaZH4/YtKxxtf"
   },
   {
     "__type__": "cc.UITransform",
@@ -261,7 +214,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 14
+      "__id__": 8
     },
     "_priority": 0,
     "_contentSize": {
@@ -277,22 +230,70 @@
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "82/PgWGrNGv52t827sDCh2"
+    "fileId": "c9Sb09Yc1G6432Gm5NJIjX"
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__id__": 0
+    },
+    "fileId": "44f6fbrW4tN+KfvWX2OEkjj"
+  },
+  {
+    "__type__": "cc.UIOpacity",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "__prefab": {
+      "__id__": 11
+    },
+    "_opacity": 255
   },
   {
     "__type__": "cc.CompPrefabInfo",
     "fileId": "e8NkmiFqNIVbh35TJ3Uh5t"
   },
   {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "__prefab": {
+      "__id__": 13
+    },
+    "_priority": 0,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
     "__type__": "cc.CompPrefabInfo",
     "fileId": "db7WSqFcRAdrC0BWq1ardR"
   },
   {
-    "__type__": "cc.CompPrefabInfo",
-    "fileId": "54eGj9L/pKaZH4/YtKxxtf"
-  },
-  {
-    "__type__": "cc.CompPrefabInfo",
-    "fileId": "c9Sb09Yc1G6432Gm5NJIjX"
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__id__": 0
+    },
+    "fileId": "b5891hnB3xPsZ8btypA8brR"
   }
 ]

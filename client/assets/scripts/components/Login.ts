@@ -1,37 +1,15 @@
-import { _decorator, Canvas, Component, director, sys, utils } from 'cc';
+import { _decorator, Canvas, Component, director, sys, utils, Node } from 'cc';
 import { AppGlobal } from './AppGlobal';
-const { ccclass } = _decorator;
+import { Button } from 'cc';
+const { ccclass, property } = _decorator;
 
-// String.prototype.format = function(args) { 
-//     if (arguments.length>0) { 
-//         let result = this; 
-//         if (arguments.length == 1 && typeof (args) == "object") { 
-//             for (let key in args) { 
-//                 let reg=new RegExp ("({"+key+"})","g"); 
-//                 result = result.replace(reg, args[key]); 
-//             } 
-//         } 
-//         else { 
-//             for (let i = 0; i < arguments.length; i++) { 
-//                 if(arguments[i]==undefined) { 
-//                     return ""; 
-//                 } 
-//                 else { 
-//                     let reg=new RegExp ("({["+i+"]})","g"); 
-//                     result = result.replace(reg, arguments[i]); 
-//                 } 
-//             } 
-//         } 
-//         return result; 
-//     } 
-//     else { 
-//         return this; 
-//     } 
-// };
 @ccclass('Login')
 export class Login extends Component {
     private _mima: string[];
     private _mimaIndex = 0;
+    
+    @property(Node)
+    public btnQuickStart: Node
 
     onLoad () {
         if(!sys.isNative && sys.isMobile){
@@ -39,6 +17,9 @@ export class Login extends Component {
         //    cvs.fitHeight = true;
         //    cvs.fitWidth = true;
         }
+        console.log("loade******d")
+
+        AppGlobal.vv().utils.addClickEvent(this.btnQuickStart, this.node, "Login", "onBtnQuickStartClicked")
         if(!AppGlobal.vv()){
            director.loadScene("loading");
            return;
@@ -50,7 +31,7 @@ export class Login extends Component {
         });
         AppGlobal.vv().audioMgr.playBGM("bgMain.mp3");
         this._mima = ["A","A","B","B","A","B","A","B","A","A","A","B","B","B"];
-        if(!sys.isNative || sys.os == sys.OS_WINDOWS){
+        if(!sys.isNative || sys.os == sys.OS.WINDOWS){
            utils.find("btn_yk", this.node).active = true;
            utils.find("btn_weixin", this.node).active = false;
         }
@@ -74,6 +55,7 @@ export class Login extends Component {
     }
 
     onBtnQuickStartClicked () {
+        console.log("******** quick start clicked *")
         AppGlobal.vv().userMgr.guestAuth();
     }
 

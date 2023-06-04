@@ -54,6 +54,7 @@ export class CreateRole extends Component {
     }
 
     onBtnConfirmClicked () {
+        console.log("confirm clicked")
         var name = this.inputName.string;
         if(name == ""){
            console.log("invalid name.");

@@ -168,7 +168,7 @@ export class Hall extends Component {
 
     initButtonHandler (btnPath: any) {
         var btn = utils.find(btnPath, this.node);
-        AppGlobal.vv().utils.addClickEvent(btn,this.node,"Hall","onBtnClicked");        
+        AppGlobal.vv().utils.addClickEvent(btn,this.node, "Hall", "onBtnClicked");        
     }
 
     initLabels () {
@@ -179,6 +179,8 @@ export class Hall extends Component {
     }
 
     onBtnClicked (event: any) {
+        console.log("on btn clicked: " + event.target.name)
+        
         if(event.target.name == "btn_shezhi"){
            this.settingsWin.active = true;
         }   

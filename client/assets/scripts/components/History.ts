@@ -3,8 +3,8 @@ const { ccclass, property } = _decorator;
 
 @ccclass('History')
 export class History extends Component {
-    @property
-    public HistoryItemPrefab:Prefab = 'null';
+    @property(Prefab)
+    public HistoryItemPrefab: Prefab
     private _history = 'null';
     private _viewlist = 'null';
     private _content = 'null';
