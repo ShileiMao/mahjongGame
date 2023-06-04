@@ -133,6 +133,8 @@ dist
 
 # build temp 
 server_build/
+server-backend/
 server_build.tar.gz
 artifacts/
 artifacts.tar
+game_root/

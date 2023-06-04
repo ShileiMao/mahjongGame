@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "build-prod": "npm run build && cp package.json server-backend/ && cp package-lock.json server-backend/",
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/index.ts",
+    "start-prod": "npm index.js"
   },
   "keywords": [],
   "author": "",

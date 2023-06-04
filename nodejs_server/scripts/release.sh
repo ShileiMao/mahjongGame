@@ -22,6 +22,8 @@ mkdir artifacts
 
 cp -r server-backend artifacts/server-backend
 
+cp -r game_root artifacts/server-backend
+
 tar -cvf artifacts.tar artifacts
 
 echo "finished"
