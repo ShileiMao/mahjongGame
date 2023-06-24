@@ -49,7 +49,7 @@ console.log("************************888*******");
   gameNetMgr: new GameNetMgr(),
   // anysdkMgr: new AnysdkMgr(),
   voiceMgr: new VoiceMgr(),
-  audioMgr: new AudioMgr(),
+  audioMgr: AudioMgr.instance,
   utils: new Utils(),
   VERSION: '20161227',
   SI: null,
@@ -65,29 +65,12 @@ console.log("************************888*******");
   radiogroupmgr: null
 }
 
+// (window as any).VModel.audioMgr.init()
+
 console.log("************************777********");
 
 export class AppGlobal {
   static vv = () => {
       return (window as any).VModel as VModel
   }
-  // VModel = {
-  //     alert: new Alert(),
-  //     userMgr: new UserMgr(),
-  //     replayMgr: new ReplayMgr(),
-  //     gameNetMgr: new GameNetMgr(),
-  //     anysdkMgr: new AnysdkMgr(),
-  //     voiceMgr: new VoiceMgr(),
-  //     audioMgr: new AudioMgr(),
-  //     utils: new Utils(),
-  //     VERSION: 0,
-  //     SI: null,
-  //     http: new HTTP(),
-  //     wc: new WaitingConnection(),
-  //     chat: null,
-  //     mahjongmgr: null,
-  //     net: new Net("localhost: 9000"), // ??
-  //     images: {},
-  //     baseInfoMap: null
-  // }
 }

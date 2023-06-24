@@ -60,7 +60,7 @@ export class AppStart extends Component {
         console.log('application start, initMgr() called'); 
         this._mainScene = 'loading';
         this.showSplash(() =>{
-            resources.load('resources/ver/cv.txt', (err, data) => {
+            resources.load('resources/ver/cv', (err, data) => {
                 // vv.VERSION = data
                 console.warn("TODO: the data needs to be adjusted: " + data)
                 console.log('current core version:' + data);

@@ -33,6 +33,7 @@ import { Voice } from "./Voice";
 import { UserInfoShow } from "./UserInfoShow";
 import { Status } from "./Status";
 import { Alert } from "./Alert";
+import { PlayerHolds } from "../GameNetMgr";
 
 const { ccclass, property } = _decorator;
 
@@ -93,7 +94,7 @@ export class MJGame extends Component {
     this.prepareRoot.active = true;
     this.initWanfaLabel();
     this.onGameBeign();
-    AppGlobal.vv().audioMgr.playBGM("bgFight.mp3");
+    AppGlobal.vv().audioMgr.playBGM("bgFight");
     AppGlobal.vv().utils.addEscEvent(this.node);
   }
 
@@ -197,7 +198,7 @@ export class MJGame extends Component {
         if (!interactable) {
           return;
         }
-        node.getComponent(UIOpacity).opacity = 255
+        node.getComponent(UIOpacity).opacity = 255;
         this._chupaidrag.active = false;
         this._chupaidrag.getComponent(Sprite).spriteFrame =
           node.getComponent(Sprite).spriteFrame;
@@ -231,7 +232,7 @@ export class MJGame extends Component {
           event.getLocationX() - view.getVisibleSize().width / 2;
         this._chupaidrag.y =
           event.getLocationY() - view.getVisibleSize().height / 2;
-          AppGlobal.vv().utils.setLocation(node, {y: 0})
+        AppGlobal.vv().utils.setLocation(node, { y: 0 });
       }.bind(this)
     );
     node.on(
@@ -431,7 +432,7 @@ export class MJGame extends Component {
       }
       var localIndex = self.getLocalIndex(seatData.seatindex);
       self.playEfx(localIndex, "play_peng");
-      AppGlobal.vv().audioMgr.playSFX("nv/peng.mp3");
+      AppGlobal.vv().audioMgr.playSFX("nv/peng");
       self.hideOptions(null);
     });
     this.node.on("gang_notify", function (data) {
@@ -640,24 +641,26 @@ export class MJGame extends Component {
       console.log("not your turn." + AppGlobal.vv().gameNetMgr.turn);
       return;
     }
+    if (this._selectedMJ) {
+      console.log("reset mj location to zero");
+      AppGlobal.vv().utils.setLocation(this._selectedMJ, { y: 0 });
+    }
 
     for (var i = 0; i < this._myMJArr.length; ++i) {
       if (event.target == this._myMJArr[i].node) {
         if (event.target == this._selectedMJ) {
           this.shoot((this._selectedMJ as any).mjId);
-          AppGlobal.vv().utils.setLocation(this._selectedMJ, {y: 0})
+          AppGlobal.vv().utils.setLocation(this._selectedMJ, { y: 0 });
           this._selectedMJ = null;
           return;
         }
-        if (this._selectedMJ != null) {
-          AppGlobal.vv().utils.setLocation(this._selectedMJ, {y: 0})
-        }
+        
         const node = event.target as Node;
         if (node) {
           const originalPos = node.position;
-          console.log("pos: " + originalPos)
+          console.log("pos: " + originalPos);
           AppGlobal.vv().utils.setLocation(node, {
-            y: 15
+            y: 15,
           });
           this._selectedMJ = node;
         }
@@ -667,13 +670,13 @@ export class MJGame extends Component {
     }
   }
 
-  shoot(mjId: any) {
+  shoot(mjId: number) {
     if (mjId == null) {
       return;
     }
 
-    console.log("chupai: " + mjId)
-    AppGlobal.vv().net.send("chupai", mjId);
+    console.log("chupai: " + mjId);
+    AppGlobal.vv().net.send("chupai", mjId + "");
   }
 
   getMJIndex(side: any, index: any) {
@@ -734,7 +737,7 @@ export class MJGame extends Component {
     }
   }
 
-  initOtherMahjongs(seatData: any) {
+  initOtherMahjongs(seatData: PlayerHolds) {
     var localIndex = this.getLocalIndex(seatData.seatindex);
     if (localIndex == 0) {
       return;
@@ -775,12 +778,12 @@ export class MJGame extends Component {
     }
   }
 
-  sortHolds(seatData: any) {
-    var holds = seatData.holds;
+  sortHolds(seatData: PlayerHolds) {
+    const holds = seatData.holds;
     if (holds == null) {
       return null;
     }
-    var mopai = null;
+    var mopai: number = null;
     var l = holds.length;
     if (l == 2 || l == 5 || l == 8 || l == 11 || l == 14) {
       mopai = holds.pop();
@@ -813,17 +816,21 @@ export class MJGame extends Component {
       (sprite.node as any).y = 0;
       this.setSpriteFrameByMJID("M_", sprite, mjid);
     }
+
+    // 从手牌中按数量去除杠牌，吃牌等，给杠牌，吃牌流出空间？
     for (var i = 0; i < lackingNum; ++i) {
       var sprite = this._myMJArr[i];
       (sprite.node as any).mjId = null;
       sprite.spriteFrame = null;
       sprite.node.active = false;
     }
+
     for (
       var i: number = lackingNum + holds.length;
       i < this._myMJArr.length;
       ++i
     ) {
+      console.log("clear mahjong id and sprit, why?: " + i);
       var sprite = this._myMJArr[i];
       (sprite.node as any).mjId = null;
       sprite.spriteFrame = null;
@@ -831,7 +838,7 @@ export class MJGame extends Component {
     }
   }
 
-  setSpriteFrameByMJID(pre: any, sprite: any, mjid: number) {
+  setSpriteFrameByMJID(pre: string, sprite: Sprite, mjid: number) {
     sprite.spriteFrame = AppGlobal.vv().mahjongmgr.getSpriteFrameByMJID(
       pre,
       mjid

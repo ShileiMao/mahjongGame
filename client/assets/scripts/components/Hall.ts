@@ -4,35 +4,36 @@ import { Global } from '../Global';
 import { AppGlobal } from './AppGlobal';
 import { ImageLoader } from './ImageLoader';
 import { UserInfoShow } from './UserInfoShow';
+import { OnBack } from './OnBack';
 const { ccclass, property } = _decorator;
 
 @ccclass('Hall')
 export class Hall extends Component {
-    @property
+    @property(Label)
     public lblName: Label = null;
-    @property
+    @property(Label)
     public lblMoney: Label = null;
-    @property
+    @property(Label)
     public lblGems: Label = null;
-    @property
+    @property(Label)
     public lblID: Label = null;
-    @property
+    @property(Label)
     public lblNotice: Label  = null;
-    @property
+    @property(Node)
     public joinGameWin: Node = null;
-    @property
+    @property(Node)
     public createRoomWin: Node = null;
-    @property
+    @property(Node)
     public settingsWin: Node  = null;
-    @property
+    @property(Node)
     public helpWin: Node = null;
-    @property
+    @property(Node)
     public xiaoxiWin: Node = null;
-    @property
+    @property(Node)
     public btnJoinGame: Node = null;
-    @property
+    @property(Node)
     public btnReturnGame: Node = null;
-    @property
+    @property(Sprite)
     public sprHeadImg: Sprite = null;
 
     initNetHandlers () {
@@ -76,8 +77,8 @@ export class Hall extends Component {
         this.initButtonHandler("right_bottom/btn_shezhi");
         this.initButtonHandler("right_bottom/btn_help");
         this.initButtonHandler("right_bottom/btn_xiaoxi");
-        this.helpWin.addComponent("OnBack");
-        this.xiaoxiWin.addComponent("OnBack");
+        this.helpWin.addComponent(OnBack);
+        this.xiaoxiWin.addComponent(OnBack);
         if(!AppGlobal.vv().userMgr.notice){
             AppGlobal.vv().userMgr.notice = {
                version:null,
@@ -94,7 +95,8 @@ export class Hall extends Component {
         this.refreshInfo();
         this.refreshNotice();
         this.refreshGemsTip();
-        AppGlobal.vv().audioMgr.playBGM("bgMain.mp3");
+
+        AppGlobal.vv().audioMgr.playBGM("bgMain");
         AppGlobal.vv().utils.addEscEvent(this.node);
     }
 
@@ -119,7 +121,6 @@ export class Hall extends Component {
     }
 
     refreshGemsTip () {
-        console.log("--------- in the hall, the mgr data: " )
         console.log(AppGlobal.vv().userMgr)
         if(AppGlobal.vv().userMgr.salt === "") {
             console.log("&&&&&&&&&& no salt - return")
@@ -210,7 +211,7 @@ export class Hall extends Component {
 
     onBtnAddGemsClicked () {
         AppGlobal.vv().alert.show("提示", AppGlobal.vv().userMgr.gemstip.msg, function() {
-           this.onBtnTaobaoClicked();
+        //    this.onBtnTaobaoClicked();
         }.bind(this));
         this.refreshInfo();
     }
@@ -225,7 +226,7 @@ export class Hall extends Component {
     }
 
     onBtnTaobaoClicked () {
-        sys.openURL('https://shop596732896.taobao.com/');
+        // sys.openURL('https://shop596732896.taobao.com/');
     }
 
     update (dt: any) {

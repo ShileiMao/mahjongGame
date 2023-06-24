@@ -7,7 +7,7 @@
     "build": "tsc",
     "build-prod": "npm run build && cp package.json server-backend/ && cp package-lock.json server-backend/",
     "start": "ts-node src/index.ts",
-    "start-prod": "npm index.js"
+    "start-prod": "node index.js"
   },
   "keywords": [],
   "author": "",

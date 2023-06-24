@@ -1,8 +1,8 @@
 import { _decorator, Component, System, resources, sys } from 'cc';
 const { ccclass } = _decorator;
 
-let URL = "http://124.220.156.23:9000";
-// let URL = "http://localhost:9000";
+// let URL = "http://124.220.156.23:9000";
+let URL = "http://localhost:9000";
 @ccclass('HTTP')
 export class HTTP extends Component {
 

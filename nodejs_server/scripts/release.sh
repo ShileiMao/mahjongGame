@@ -24,6 +24,9 @@ cp -r server-backend artifacts/server-backend
 
 cp -r game_root artifacts/server-backend
 
+cp start_server.sh artifacts/server-backend
+cp stop_server.sh artifacts/server-backend
+
 tar -cvf artifacts.tar artifacts
 
 echo "finished"

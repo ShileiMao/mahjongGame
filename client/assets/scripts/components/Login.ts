@@ -29,7 +29,7 @@ export class Login extends Component {
            console.log("onLoad:push_need_create_role");
            director.loadScene("createrole");
         });
-        AppGlobal.vv().audioMgr.playBGM("bgMain.mp3");
+        AppGlobal.vv().audioMgr.playBGM("bgMain");
         this._mima = ["A","A","B","B","A","B","A","B","A","A","A","B","B","B"];
         if(!sys.isNative || sys.os == sys.OS.WINDOWS){
            utils.find("btn_yk", this.node).active = true;

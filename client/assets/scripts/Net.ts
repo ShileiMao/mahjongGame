@@ -26,7 +26,9 @@ export class Net extends Component {
             return;
         }
         var handler = function(data: any){
-            if(event != "disconnect" && typeof(data) == "string"){
+            console.log("handler data: " + JSON.stringify(data));
+
+            if(event != "disconnect" && typeof(data) == "string" && data.trim().length > 0) {
                 data = JSON.parse(data);
             }
             fn(data);
@@ -123,7 +125,7 @@ export class Net extends Component {
   
     send(event: string, data: any = null) {
       if(this.sio.readyState !== WebSocket.OPEN) {
-          console.error("socket is not open");
+          console.error("socket is not open, event: " + event);
           return;
       }
       

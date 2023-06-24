@@ -1,4 +1,4 @@
-import { _decorator, Button, Component, EventHandler, Node, game, macro, math, Slider, utils, Vec3, UITransform, Input, input } from 'cc';
+import { _decorator, Button, Component, EventHandler, Node, game, macro, math, Slider, utils, Vec3, UITransform, Input, input, Quat } from 'cc';
 import { AppGlobal } from './components/AppGlobal';
 const { ccclass } = _decorator;
 
@@ -41,21 +41,39 @@ export class Utils extends Component {
         // }, node);
     }
 
+    constructVectValue(newVal: {x?: number, y?: number, z?: number }, defaultValue: {x?: number, y?: number, z?: number}) {
+        const newX = (newVal.x !== undefined && newVal.x !== null) ? newVal.x : defaultValue.x
+        const newY = (newVal.y !== undefined && newVal.y !== null) ? newVal.y : defaultValue.y
+        const newZ = (newVal.z !== undefined && newVal.z !== null) ? newVal.z : defaultValue.z
+
+        return {
+            x: newX,
+            y: newY,
+            z: newZ
+        }
+    }
+
     setRotation(node: Node, rotation: {x?: number, y?: number, z?: number}) {
         const oldRotation: math.Quat = node.rotation
-        const newRotation = math.quat(rotation.x || oldRotation.x, rotation.y || oldRotation.y, rotation.z || oldRotation.z, oldRotation.w)
+        const newValues = this.constructVectValue(rotation, oldRotation)
+        const newRotation = new Quat(newValues.x, newValues.y, newValues.z);
+
         node.setRotation(newRotation)
     }
 
     setLocation(node: Node, location: {x?: number, y?: number, z?: number}) {
         const oldPosition = node.position
-        const newPosition = new Vec3(location.x || oldPosition.x, location.y || oldPosition.y, location.z || oldPosition.z);
+        const newValues = this.constructVectValue(location, oldPosition);
+
+        const newPosition = new Vec3(newValues.x, newValues.y, newValues.z);
         node.setPosition(newPosition)
     }
 
     setScale(node: Node, scale: {x?: number, y?: number, z?: number}) {
         const curScale = node.scale;
-        const newScale = new Vec3(scale.x || curScale.x, scale.y || curScale.y, scale.z || curScale.z)
+        const newValues = this.constructVectValue(scale, curScale);
+
+        const newScale = new Vec3(newValues.x, newValues.y, newValues.z)
         node.setScale(newScale)
     }
 
